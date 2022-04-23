@@ -22,3 +22,4 @@ This website features a barebones war card game.  I wanted to test out the manip
 - Add animation
 - Fix image sizing
 - Make Responsive
+- Work around using timer to not overload API with requests
