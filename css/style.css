@@ -11,11 +11,15 @@
 /* LAYOUT
 /*******************************************/
 img{
-  display: block;
+  display: line;
   margin: 0 auto;
+  width:50px;
 }
 
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+.hidden {
+  display: none;
+}

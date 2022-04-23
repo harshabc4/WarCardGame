@@ -74,16 +74,16 @@ load();
     //   // append li to ul
     //   document.querySelector('ul').appendChild(li)
 
-async function deal1(){
+function deal1(){
   // const url = `https://www.deckofcardsapi.com/api/deck/${deckId}/draw/?count=2`
   const player1DeckBuild = `https://www.deckofcardsapi.com/api/deck/${deckId}/draw/?count=1`
-   fetch(player1DeckBuild)
+  fetch(player1DeckBuild)
       .then(res => res.json()) // parse response as JSON
       .then(data => {
         console.log(data)
         console.log(data.remaining)
         console.log(data.cards[0].code)
-           fetch(`https://www.deckofcardsapi.com/api/deck/${deckId}/pile/player1pile/add/?cards=${data.cards[0].code}`)
+          fetch(`https://www.deckofcardsapi.com/api/deck/${deckId}/pile/player1pile/add/?cards=${data.cards[0].code}`)
           // fetch(player1Draw)
           console.log('deal1pile1')
           console.log(data.remaining+'cards left')
@@ -101,11 +101,11 @@ async function deal1(){
 
   }
 
-  async function deal2(){
+  function deal2(){
     // const url = `https://www.deckofcardsapi.com/api/deck/${deckId}/draw/?count=2`
     const player1DeckBuild = `https://www.deckofcardsapi.com/api/deck/${deckId}/draw/?count=1`
   
-     fetch(player1DeckBuild)
+    fetch(player1DeckBuild)
         .then(res => res.json()) // parse response as JSON
         .then(data => {
           console.log(data)
@@ -212,7 +212,7 @@ async function drawTwo(){
 const timer = ms => new Promise(res => setTimeout(res, ms))
 
 async function load () { // We need to wrap the loop into an async function for this to work
-  for (var i = 1; i <= 3; i++) {
+  for (var i = 0; i <= 3; i++) {
     war();
     await timer(300); // then the created Promise can be awaited
   }
