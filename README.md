@@ -17,9 +17,10 @@ This website features a barebones war card game.  I wanted to test out the manip
 
 ## Future Plans:
 
+- Fix War is ending the game bug
 - Check if War is declaring correct winner
 - Add background
 - Add animation
 - Fix image sizing
-- Make Responsive
+- Make responsive
 - Work around using timer to not overload API with requests
